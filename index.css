@@ -1,0 +1,189 @@
+body{
+    box-sizing: border-box;
+    background-color: black;
+}
+.main, span{
+    color: white;
+    position: relative;
+    left: 22rem;
+    top: 11rem;
+    font-size: 90px;
+    font-weight: bold;
+    
+    
+    /* margin: 20rem ; */
+   /* padding: 5rem 4rem 4rem 40rem; */
+}
+.box{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+        box-shadow: 5px 5px 9px white;
+    background-color: red;
+    animation: linear  infinite;   
+    animation-name: run ;
+    animation-duration: 6s;
+}
+
+@keyframes run {
+    
+    0% {
+        background-image: linear-gradient(
+            to right,
+            rgb(255, 164, 164),
+            rgb(140, 71, 71)
+        );
+    }
+    12.5% {
+        background-image:
+        linear-gradient(
+            to right,
+            rgb(255, 164, 164),
+            rgb(140, 71, 71)
+        
+        );
+           
+        
+    }
+    25% { 
+        /* left: 300px; */
+        background-image: linear-gradient(
+            rgb(99, 239, 232),
+         rgb(99, 239, 232)
+        );
+        transform: translateX(87rem);
+         /* transform: rotateX(100deg);  */
+    }
+    37.5% {
+        background-image: linear-gradient(
+           
+            blue,
+            rgb(99, 239, 232)
+        );
+    }
+   50% {
+    transform: translate(87rem,25rem);
+    background-image: linear-gradient(
+        to bottom,
+        blue,
+        rgb(99, 239, 232)
+    );
+   }
+   62.5% {
+    background-image: linear-gradient(
+        rgb(255, 223, 135), rgb(255, 223, 135)
+    );
+   }
+
+   75%{
+    transform: translate(0rem,25rem);
+    background-image: linear-gradient(
+        rgb(255, 223, 135),
+        rgb(255, 223, 135)
+    );
+   }
+   87.5%{
+    background-image: linear-gradient(
+        rgb(255, 188, 2),
+        rgb(255, 188, 2)
+    );
+   }
+    100% {
+       
+        transform: translate(0rem,0rem);
+        background-image: linear-gradient(
+            rgb(255, 188, 2)
+            , rgb(255, 188, 2)
+        );
+       
+    }
+}
+
+@media (max-width:900px) {
+    .main, span{
+        color: red;
+        position: relative;
+        left: 10rem;
+        top: 9rem;
+        font-size: 30px;
+        
+        /* margin: 20rem ; */
+       /* padding: 5rem 4rem 4rem 40rem; */
+    }
+    .box{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 4px white;
+        background-color: blue;
+        animation: linear  infinite;   
+        animation-name: run ;
+        animation-duration: 6s;
+    }
+    
+    @keyframes run {
+         
+    0% {
+        background-image: linear-gradient(
+            to right,
+            rgb(255, 164, 164),
+            rgb(140, 71, 71)
+        );
+    }
+        
+        25% { 
+            /* left: 300px; */
+            background-image: linear-gradient(
+            rgb(99, 239, 232),
+         rgb(99, 239, 232)
+        );
+            transform: translateX(40rem);
+             /* transform: rotateX(100deg);  */
+        }
+        37.5% {
+            background-image: linear-gradient(
+               
+                blue,
+                rgb(99, 239, 232)
+            );
+        }
+       50% {
+        transform: translate(40rem,30rem);
+        background-image: linear-gradient(
+        to bottom,
+        blue,
+        rgb(99, 239, 232)
+    );
+    
+       }
+
+       62.5% {
+        background-image: linear-gradient(
+            rgb(255, 223, 135), rgb(255, 223, 135)
+        );
+       }
+       75%{
+        transform: translate(0rem,30rem);
+        background-image: linear-gradient(
+        rgb(255, 223, 135),
+        rgb(255, 223, 135)
+    );
+    
+       }
+       87.5%{
+        background-image: linear-gradient(
+            rgb(255, 188, 2),
+            rgb(255, 188, 2)
+        );
+       }
+        100% {
+            background-image: linear-gradient(
+                rgb(255, 188, 2),
+                rgb(255, 188, 2)
+            );
+            transform: translate(0rem,0rem);
+    
+           
+        }
+    }
+}
